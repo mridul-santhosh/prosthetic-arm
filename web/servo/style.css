@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #202020;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 100vw;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.slider {
+  width: 80vw;
+  max-width: 400px;
+}
+
+.slider-label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.servo-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .slider-label {
+    font-size: 1rem;
+  }
+
+  .servo-value {
+    font-size: 1.2rem;
+  }
+
+  .button {
+    font-size: 1rem;
+  }
+}
